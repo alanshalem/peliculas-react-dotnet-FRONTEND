@@ -11,8 +11,20 @@ import Typography from "@mui/material/Typography";
 import { MouseEvent, useState } from "react";
 import { Link } from "react-router-dom";
 
-const pages = ["Géneros"];
-const links = ["/generos"];
+const pages = [
+  "Crear Pelicula",
+  "Filtrar Peliculas",
+  "Géneros",
+  "Actores",
+  "Cines",
+];
+const links = [
+  "peliculas/crear",
+  "peliculas/filtrar",
+  "/generos",
+  "/actores",
+  "/cines",
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
