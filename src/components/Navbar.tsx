@@ -19,8 +19,8 @@ const pages = [
   "Cines",
 ];
 const links = [
-  "peliculas/crear",
-  "peliculas/filtrar",
+  "/peliculas/crear",
+  "/peliculas/filtrar",
   "/generos",
   "/actores",
   "/cines",
@@ -50,15 +50,22 @@ const Navbar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+          <Link
+            to="/"
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
           >
-            PELICULAS-REACT-DOTNET
-          </Typography>
-
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            >
+              PELICULAS-REACT-DOTNET
+            </Typography>
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -100,14 +107,22 @@ const Navbar = () => {
               ))}
             </Menu>
           </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+          <Link
+            to="/"
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
           >
-            PELICULAS-REACT-DOTNET
-          </Typography>
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            >
+              PELICULAS-REACT-DOTNET
+            </Typography>
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Link

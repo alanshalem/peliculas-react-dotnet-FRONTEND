@@ -1,5 +1,15 @@
+import { useParams } from "react-router-dom";
+
 const EditarPeliculas = () => {
-  return <div>EditarPeliculas</div>;
+  const { id } = useParams();
+  console.log(id);
+
+  return (
+    <>
+      <h3>Editar Pelicula</h3>
+      <p>{id}</p>
+    </>
+  );
 };
 
 export default EditarPeliculas;

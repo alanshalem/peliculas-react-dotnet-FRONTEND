@@ -5,7 +5,6 @@ const IndiceGeneros = () => {
     <>
       <h3>IndiceGeneros</h3>
       <Link to="/generos/crear">Crear Genero</Link>
-      <Link to="/generos/editar">Editar Genero</Link>
     </>
   );
 };
